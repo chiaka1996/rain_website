@@ -24,12 +24,12 @@ function App() {
           <div className="text text-front">
             coming soon{" "}
             <span role="img" aria-label="none">
-              😊
+              😌
             </span>
           </div>
           <div className="text text-back">
             <span role="img" aria-label="none">
-              😌
+              😊
             </span>
           </div>
         </div>
