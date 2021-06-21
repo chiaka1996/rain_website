@@ -19,6 +19,21 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <div className="message">
+        <div className="texts">
+          <div className="text text-front">
+            coming soon{" "}
+            <span role="img" aria-label="none">
+              😊
+            </span>
+          </div>
+          <div className="text text-back">
+            <span role="img" aria-label="none">
+              😌
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
