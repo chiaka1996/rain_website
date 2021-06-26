@@ -21,9 +21,14 @@ const Footer = (props) => {
                 <ul>
                     <li onClick={()=>props.scrollToRef(props.myAbout)}>About</li>
                     <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div className="footerLinks_three">
+            <ul>
                     <li>Twitter</li>
                     <li>Whatssap</li>
-                </ul>
+            </ul>
             </div>
             </div>
         </div>

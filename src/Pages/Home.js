@@ -14,17 +14,30 @@ const Home = () => {
 
     const myService = useRef(null);
 
+    const mySignup = useRef(null);
+
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+    const scrollToTheTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
     return (
         <div>
             <Navigation 
             scrollToRef = {scrollToRef} 
             myContact ={myContact}
             myAbout = {myAbout}
+            mySignup = {mySignup}
             myService = {myService} 
+            scroll = {scrollToTheTop}
             />
-            <About refProp = {myAbout}/>
-            <GetProduct />
+            <About
+             refProp = {myAbout}
+             />
+            <GetProduct refProp = {mySignup}/>
             <Service refProp = {myService}/>
             <SolveIssues />
             <Footer

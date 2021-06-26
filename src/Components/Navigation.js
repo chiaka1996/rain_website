@@ -10,11 +10,11 @@ const Navigation = (props) => {
             Rain
         </div>
         <div className="flexDiv"></div>
-        <span className="links">Home</span>
+        <span onClick={()=>props.scroll()} className="links">Home</span>
         <span onClick={()=>props.scrollToRef(props.myService)} className="links">Service</span>
         <span onClick={()=>props.scrollToRef(props.myAbout)} className="links">About Us</span>
         <span onClick={()=>props.scrollToRef(props.myContact)} className="links">Contact Us</span>
-        <button className="signupButton">Sign up</button>
+        <button onClick={()=>props.scrollToRef(props.mySignup)} className="signupButton">Sign up</button>
         </div>
     )
     }

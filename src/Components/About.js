@@ -13,12 +13,13 @@ const About = (props) => {
                 <div className="header">Digitizing Africa's</div>
                 <div className="header">Informal Economy</div>
                 <div className="descriptionNotes">
-                    Bringing Financial Services to the excluded, Underated
-                    and overlooked businesses in the
-                    informal Econonomy
-                    </div>
-
-                    <button>Get started</button>
+                    <div> Bringing Financial Services to the excluded,</div>
+                    <div>Underatedand overlooked businesses in the</div>
+                    <div>informal Econonomy</div>
+                </div>
+                <div><button>Get started</button></div>
+                <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1624547631/googleImg_b2gb1r.png"
+                    alt="google play" />
                     </div>
         </div>
     )

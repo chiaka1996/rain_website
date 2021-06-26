@@ -1,7 +1,7 @@
 import React from "react";
 import '../SCSS/Home.scss';
 
-const GetProduct = () => {
+const GetProduct = (props) => {
     return (
         <div className="allContainer">
         <div className="getProductContainer" >
@@ -11,7 +11,7 @@ const GetProduct = () => {
             Find verified distributors on Rain, <br/> select products,
             place order and <br/> have it delivered to your store <br/> same day.
             <br/>
-            <button>Go shopping</button>
+                <button>Go Shopping</button>        
             </div>
             </div>
             <div className="imgContainer">
@@ -20,7 +20,7 @@ const GetProduct = () => {
             </div>
         </div>
 
-        <div className="paymentCulture">
+        <div ref={props.refProp} className="paymentCulture">
             <div className="paymentHeader"> A new & better payment culture</div>
             <div className="paymentNotes">
             Embrace  a new payment<br/> experience by making<br/>
@@ -66,8 +66,9 @@ const GetProduct = () => {
                 </div>
 
                 <div className="accessLoanNote">
-                From the comfort of your phone,<br/>
-                apply for & get loans based on your <br/>credit score
+                <div>From the comfort of your phone,</div>
+                <div>apply for & get loans based on your</div>
+                <div className="credit">credit score</div>
                 </div>
                 <div className="accessImage">
                 <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1624555663/products_image4_ezgnq1.png"
