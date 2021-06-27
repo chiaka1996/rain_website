@@ -1,0 +1,90 @@
+//service mobile view
+.serviceContainer{
+    padding-top: 70%;
+    background-image: linear-gradient(360deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%); 
+    text-align: center;
+
+    button{
+        width: 100px;
+        height: 40px;
+        font-weight: 600;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+}
+
+.ourProductHeader{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 90px;
+    margin-bottom: 3%;
+}
+
+.firstLevel, .secondLevel, .thirdLevel, .fourthLevel, .fifthLevel{
+    margin-bottom: 4.3%;
+}
+
+.productButtons{
+    text-align: center;
+}
+
+.procurement{
+    margin-right: 60px;
+}
+
+.ledger{
+    margin-right: 100px;
+}
+
+.ajo{
+    margin-right: 50px;
+}
+
+.debts{
+    margin-left: 50px;
+}
+
+// desktop view
+@media (min-width: 1000px) {
+    .serviceContainer{
+        padding-top: 8%;
+    
+        button{
+            width: 200px;
+            height: 55px;
+            font-weight: 600;
+            background-color: black;
+        }
+    }
+
+    .ourProductHeader{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .productButtons{
+        text-align: center;
+    }
+    
+    .procurement{
+        margin-right: 100px;
+    }
+    
+    .ledger{
+        margin-right: 400px;
+    }
+    
+    .ajo{
+        margin-right: 400px;
+    }
+    
+    .debts{
+        margin-left: 50px;
+    }
+    
+}

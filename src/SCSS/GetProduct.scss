@@ -1,0 +1,319 @@
+// getproduct web view
+.getProductContainer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 2% 0 0 0%;
+    background-image: linear-gradient(180deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 10%, rgba(172, 127, 6, 0.6) 80%);
+
+    .getHeader{
+        font-weight: 650;
+        font-size: 22px;
+        line-height: 96px;
+    }
+
+    .getProductNotes{
+        text-align: center;
+    }
+
+    .getNotes {
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 54px;
+        padding-top: 0;
+        letter-spacing: 0.2em;
+
+    }
+
+    img{
+        margin-top: 15%;
+        width: 100%;
+        transform: rotate(20deg);
+    }
+
+    button{
+        font-style: normal;
+        font-size: 13px;
+        line-height: 54px;
+        letter-spacing: 0.2em;
+        margin-top: 5%;
+        width: 170px;
+        height: 50px;
+        color: white;
+        font-family: 'Poppins';
+        background-color: black;
+        font-weight: 600;
+        border-radius: 15px;
+        border: 1px solid black;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+// payment culture
+.paymentCulture{
+    background-image: linear-gradient(180deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%);
+    text-align: center;
+    padding-top: 3%;
+
+    @media (max-width: 500px) {
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+.paymentHeader{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 90px;
+}
+
+.paymentNotes{
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.bye_bye{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    padding: 7% 0 7% 0;
+    text-align: center;
+    background-image: linear-gradient(360deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%);
+}
+
+.currentAccount {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7% 0 7% 0;
+
+    .zeroAccount, .longQue{
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
+
+    .longQue{
+        margin-top: 4%;
+    }
+}
+
+.sendMoney {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(360deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%);
+
+
+    .sendMoneyImage{
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 55vh;
+            transform: rotate(15deg);
+        }
+    }
+
+    .sendMoneyNote{
+        width: 100%;
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 700;
+        font-family: "Poppins";
+        font-style: italic;
+        padding-top: 2%;
+        padding-right: 0;
+        text-align: center;
+
+    }
+}
+
+//access loan div
+.accessLoan{
+    position: relative;
+    padding-top: 17.5%;
+    padding-bottom: 17%;
+    background-image: linear-gradient(180deg, #FFFFFF,
+    rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%);
+    // text-align: center;
+
+}
+.acessLoanHeader{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.accessLoanNote{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600px;
+    letter-spacing: 0.1em;
+    margin-top: 2%;
+    padding: 3% 0 0 0;
+
+    div{
+        margin-bottom: 1%;
+    }
+
+    .credit{
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+}
+
+.screen_one{
+        position: absolute;
+        width: 80%;
+        right: 25%;
+        top: 80%;
+}
+
+.screen_two{
+            position: absolute;
+            width: 80%;
+            right: 0;
+            top: 80%;
+}
+
+@media (min-width: 1000px) {
+
+    .getProductContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 7% 0 0 0%;
+
+        .getHeader{
+            font-size: 45px;
+        }
+
+        .getNotes {
+            font-size: 25px;
+            padding-top: 4%;
+        }
+
+        img{
+            margin-top: 0;
+        }
+
+        button{
+        font-size: 20px;
+        margin-top: 13%;
+        width: 250px;
+        }
+
+    }
+
+    //payment culture web view
+        .paymentHeader{
+            font-size: 42px;
+        }
+        
+        .paymentNotes{
+            font-size: 25px;
+        }
+
+    //bye-bye
+    .bye_bye{
+        font-size: 44px;
+    }
+
+    .currentAccount {
+        // padding: 7% 0 7% 0;
+    
+        .zeroAccount, .longQue{
+            font-size: 25px;
+            // line-height: 35px;
+        }
+    }
+
+    .sendMoney {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
+        .sendMoneyImage{
+            width: 60%;
+    
+            img{
+                width: 100%;
+                height: 100vh;
+                transform: rotate(15deg);
+            }
+        }
+    
+        .sendMoneyNote{
+            width: 40%;
+            font-size: 50px;
+            line-height: 80px;
+            padding-top: 11%;
+            padding-right: 15%;
+        }
+    
+    }
+
+    .accessLoan{
+        position: relative;
+        padding-top: 6.5%;
+        padding-bottom: 15%;
+        background-image: linear-gradient(180deg, #FFFFFF,
+        rgba(126, 123, 123, 0) 5%, rgba(172, 127, 6, 0.6) 95%);
+        // text-align: center;
+    
+    }
+    .acessLoanHeader{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+    
+    .accessLoanNote{
+        text-align: left;
+        font-size: 30px;
+        font-weight: 600px;
+        letter-spacing: 0.1em;
+        margin-top: 2%;
+        padding: 9% 0 0 10%;
+    
+        div{
+            margin-bottom: 1%;
+        }
+    
+        .credit{
+            text-align: center;
+            padding: 0 50% 0 0;
+        }
+    }
+    
+    .screen_one{
+            position: absolute;
+            width: 35%;
+            right: 13%;
+            top: 29%;
+    }
+    
+    .screen_two{
+                position: absolute;
+                width: 35%;
+                right: 1.2%;
+                top: 29%;
+    }
+
+
+
+
+}

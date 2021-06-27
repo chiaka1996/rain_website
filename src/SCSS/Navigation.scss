@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
+.NavigationContainer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding-bottom: 0.2%;
+    z-index: 2; 
+}
+
+.hamburger{
+    display: block;
+    margin-top: 5.5%;
+    margin-right: 8%;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.logoAndBrand{
+    padding: 5.5% 0 0 8%;
+    width: 17%;
+    img{
+        width: 100%;
+    }
+}
+
+.flexDiv {
+    flex: 1;
+}
+
+.bar_one{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    transform:  translateY(10px) rotate(45deg); 
+}
+
+.bar_two {
+    opacity: 0;
+}
+
+.bar_three{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.links, .signupButton{
+    display: none;
+}
+
+.sidebar, .noSidebar {
+    position: fixed;
+    width: 40%;
+    // height: 50vh;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600px;
+    top: 18%;
+    padding: 5% 0 5% 0;
+    text-align: center;
+    font-size: 23px;
+
+    div{
+        margin-bottom: 20%;
+    }
+
+    button{
+        display: block;
+        background: #DBA514;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        width: 100px;
+        height: 40px;
+        border: 1px solid #DBA514;
+        outline: none;
+        margin: 1% auto;
+    }
+}
+
+.noSidebar{
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    left: -100%;
+}
+
+.sidebar{
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    left: 0;
+    z-index: 100;
+}
+
+@media (min-width: 1000px) {
+
+    .logoAndBrand{
+        padding: 2% 0 0 8%;
+        width: 6%;
+        img{
+            width: 100%;
+        }
+}
+
+.hamburger{
+    display: none;
+}
+
+.links, .signupButton{
+    display: block;
+}
+
+.links{
+    margin-right: 5%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 10px;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.signupButton{
+    margin-right: 4%;
+    background: #DBA514;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 10px;
+    width: 93px;
+    height: 40px;
+    border: 1px solid #DBA514;
+    outline: none;
+    margin-top: 3%;
+    cursor: pointer;
+}
+}

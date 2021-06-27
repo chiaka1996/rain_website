@@ -1,13 +1,20 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import Navigation from "../Components/Navigation";
 import About from "../Components/About";
 import GetProduct from "../Components/GetProduct";
 import Service from "../Components/Service";
 import SolveIssues from "../Components/SolveIssue";
 import Footer from '../Components/Footer';
+import SideBar from '../Components/SideBar';
+
 import '../SCSS/Home.scss';
 
 const Home = () => {
+    const [displaySideBar, setSideBarDispay] = useState(false);
+
+    const sideBarDisplay = (value) => {
+      setSideBarDispay(value);
+    }
     const myContact = useRef(null);
 
     const myAbout = useRef(null);
@@ -33,6 +40,18 @@ const Home = () => {
             mySignup = {mySignup}
             myService = {myService} 
             scroll = {scrollToTheTop}
+            sideBarDisplay = {sideBarDisplay}
+            displaySideBar = {displaySideBar}
+            />
+             <SideBar
+             scrollToRef = {scrollToRef} 
+             myContact ={myContact}
+             myAbout = {myAbout}
+             mySignup = {mySignup}
+             myService = {myService} 
+             scroll = {scrollToTheTop}
+             sideBarDisplay = {sideBarDisplay}
+            displaySideBar={displaySideBar}
             />
             <About
              refProp = {myAbout}

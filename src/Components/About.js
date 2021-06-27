@@ -14,7 +14,7 @@ const About = (props) => {
                 <div className="header">Informal Economy</div>
                 <div className="descriptionNotes">
                     <div> Bringing Financial Services to the excluded,</div>
-                    <div>Underatedand overlooked businesses in the</div>
+                    <div>Underated and overlooked businesses in the</div>
                     <div>informal Econonomy</div>
                 </div>
                 <div><button>Get started</button></div>

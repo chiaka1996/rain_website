@@ -1,6 +1,6 @@
 import React from "react";
-import '../SCSS/Home.scss';
-
+import '../SCSS/GetProduct.scss';
+ 
 const GetProduct = (props) => {
     return (
         <div className="allContainer">
@@ -20,6 +20,8 @@ const GetProduct = (props) => {
             </div>
         </div>
 
+
+        {/* payment culture */}
         <div ref={props.refProp} className="paymentCulture">
             <div className="paymentHeader"> A new & better payment culture</div>
             <div className="paymentNotes">
@@ -27,7 +29,7 @@ const GetProduct = (props) => {
              payment via Rain to distributors
             </div>
             <div>
-                <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1624547631/googleImg_b2gb1r.png"  alt="google play" />
+                <img className="cultureImg" src="https://res.cloudinary.com/chiaka1996/image/upload/v1624547631/googleImg_b2gb1r.png"  alt="google play" />
             </div>
         </div>
 
