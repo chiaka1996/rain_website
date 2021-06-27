@@ -4,16 +4,18 @@ import '../SCSS/Home.scss';
 const Footer = (props) => {
     return (
         <div ref={props.refProp} className="footerContainer">
-            <div className="footerHeader">Partnering with mom &pop stores<br/>
-                to digitize the informal economy.
+            <div className="footerHeader">
+                <img src="https://res.cloudinary.com/chiaka1996/image/upload/v1624823992/20210627_162127_0000_tyolhg_lveson.png"
+                alt="footer banner" />
+                <span>Partnering with mom &pop stores<br/>
+                to digitize the informal economy.</span>
             </div>
             
             <div className="footerLink">
             <div className="footerLinks_one">
                 <ul>
-                    <li>Login</li>
-                    <li>Open Account</li>
                     <li>Blog</li>
+                    <li>Open Account</li>
                 </ul>
             </div>
 

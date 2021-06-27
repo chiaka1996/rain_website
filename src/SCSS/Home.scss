@@ -96,7 +96,16 @@
 
 .footerHeader{
     padding: 3% 0 0 6.5%;
-    font-size: 21px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 500px){
+    img{
+        margin-right: 1%;
+        height: 9vh;
+    }
+    }
 }
 
 .footerLink{
@@ -164,15 +173,19 @@
 }
 
 .footerHeader{
-    padding: 3% 0 0 6.5%;
+    padding: 3% 0 0 1%;
     font-size: 21px;
+
+    img{
+        margin-right: 1%;
+    }
 }
 
 .footerLink{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5% 12% 0 3%;
+    padding: 0.5% 12% 0 0;
 }
 
 }
