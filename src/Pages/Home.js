@@ -23,7 +23,13 @@ const Home = () => {
 
     const mySignup = useRef(null);
 
-    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+    const scrollToRef = (ref) => {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
 
     const scrollToTheTop = () => {
         window.scrollTo({
@@ -31,6 +37,7 @@ const Home = () => {
           behavior: "smooth"
         });
       }
+
     return (
         <div>
             <Navigation 

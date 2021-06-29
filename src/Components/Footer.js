@@ -29,7 +29,7 @@ const Footer = (props) => {
             <div className="footerLinks_three">
             <ul>
                     <li>Twitter</li>
-                    <li>Whatssap</li>
+                    <li>Whatsapp</li>
             </ul>
             </div>
             </div>
